@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-size: 150%;
+            border: 1px solid transparent;
+            transition: background-color 2s; 
+            /*점점커집니다에 마우스 올릴시 백그라운드 컬러 라이트불루*/
+
+        }
+        span:hover{
+            /* font-size: 300%;
+            border: 1px solid red; 
+            마우스 올릴 시 ===> 폰트 사이즈 커지면서 보더 빨강*/
+            background-color: lightskyblue;
+        }
+        p.demo{
+            width: 300px;
+            border: 1px solid black;
+        }
+        label{
+            display: inline-block;
+            width: 100%;
+            border: 1px solid red;
+            background-color: yellow;
+            /*백그라운드 색깔 자연스럽게 옐로에서 그린옐로
+                +   보더색깔 자연스럽게 블루 */
+            transition: background-color 1s,
+                        border-color 1s,
+                        font-weight 1s; ; 
+        }
+        label:hover{
+            background-color: greenyellow;
+            border-color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="pages">
+        <h2>글자가 부드럽게 커지는 효과</h2>
+        <p>
+            <span>점점 커집니다</span>
+        </p>
+        <h2>동시에 변화를 주는 효과</h2>
+        <p class="demo">
+            <label for="">웹사이트 테스트</label>
+        </p>
+    </div>
+</body>
+</html>

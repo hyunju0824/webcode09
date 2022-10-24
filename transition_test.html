@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            /*원모양 만들기*/
+            font-size: 200%;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 200px;
+            text-align: center;
+            line-height: 200px;
+            /*원에 마우스 올리면
+            요론 것들이 1초동안 변한다.*/
+            transition: background-color 1s,
+                        font-size 1s,
+                        box-shadow 1s,
+                        text-shadow 1s;
+
+        }
+        .circle:hover{
+            background-color: cornflowerblue;
+            font-size: 400%;
+            box-shadow: 3px 3px 3px black;
+            text-shadow: 3px 3px 5px mediumspringgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="pages">
+        <h2>원도형에 마우스를 올리면 배경색 부드럽게 변경</h2>
+        <div class="circle">
+            <span>원</span>
+        </div>
+    </div>
+</body>
+</html>

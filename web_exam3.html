@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo{
+            position: relative;
+            display: inline-block;
+        }
+        .plus{
+            position: absolute;
+            top: 0;
+            right: 0;
+        } 
+        
+        .plus img{
+            transition: transform 1s;
+            width: 50px;
+        }
+
+        .plus:hover img{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pages">
+        <h1>마우스를 올리면 플러스 아이콘 회전</h1>
+        <div class="photo">
+            <img src="/webcode09/images/겨울산.jpg" alt="" srcset="">
+            <div class="plus">
+                <img src="/webcode09/images/플러스.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

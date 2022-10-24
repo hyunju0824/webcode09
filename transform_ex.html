@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+            border: 1px solid red;
+        }
+        .pages{
+            width:600px;
+            height: auto;
+            background-color: white;
+        }
+        .trans{                                 /*도형 이동*/
+            transition: transform 1s;
+        }
+        .trans:hover{
+            transform: translate(10px, 10px);
+        }
+        /* .scale:hover{   
+            transform: scale(1.2);
+        } */
+        header{
+            border: 1px solid green;
+        }
+        .scale{                                   /*도형 확대*/
+            transition: transform 1s;
+        }
+        .h_scale:hover .scale{ /*   도형 확대
+            마우스-헤더 영역 전체(초록테두리 안 전부)*/
+            transform: scale(1.2) translateX(100px);
+        }   
+        .rot{                                    /*도형 회전*/
+            position: relative;
+            left: 0px;
+            transition: transform 1s,  left 1s;
+        }
+        .h_rot:hover .rot{
+            transform: rotate(180deg);
+            left : 100%;
+        }
+        .skew{                                  /*도형 기울림*/
+            transition: transform 2s;
+        }
+        .h_skew:hover .skew{ 
+            transform: skew(999999999999999999999deg, 999999999999999999999999deg);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="pages">
+        <div class="trans">
+            도형 이동
+        </div>
+        <header class="h_scale">
+        <div class="scale">
+            도형 확대
+        </div>
+        </header>
+
+        <header class="h_rot">
+        <div class="rot">
+            도형 회전
+        </div>
+        </header>
+        
+        <header class="h_skew">
+        <div class="skew">
+            도형 기울림
+        </div>
+        </header>
+    </div>
+</body>
+</html>

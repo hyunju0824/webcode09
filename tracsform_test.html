@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pages{
+            width: 960px;
+            margin:0 auto;
+        }
+        .text{
+            float: left;
+            width: 600px;
+        }
+        .photo img{     /*가을산 마우스 - 기울림*/
+            display: inline-block;
+            transition: transform 1s;
+        }
+        .photo:hover img{
+            transform:skewX(-15deg);
+
+        }
+
+        .middle{    /*바퀴 마우스 - 시계방향회전*/
+            text-align: center;
+            margin-top: 70px;
+        }
+        .middle:hover img{
+            transform:rotate(180deg);
+        }
+        .middle img{
+            transition: transform 5s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="pages">
+
+        <div class="top">
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sint ipsam, qui, inventore id,
+                tempora
+                cum veritatis quidem odio unde quisquam magnam. Perspiciatis laborum atque laudantium, ea alias ad
+                consectetur.
+            </div>
+            <!--마우스 오버시 시계방향회전-->
+            <div class="photo">
+                <img class="mt" src="images/가을산.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        <!--마우스 오버시 회전-->
+        <div class="middle">
+            <img src="images/자전거바퀴.jpg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+
+</html>
